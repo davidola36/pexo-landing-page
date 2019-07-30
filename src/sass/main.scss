@@ -1,0 +1,29 @@
+
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography"; // no need for _ or .scss
+@import "base/utilities"; // no need for _ or .scss
+// no need for _ or .scss
+               
+@import "components/button"; 
+@import "components/project";      
+@import "components/bookings";
+@import "components/comments"; 
+@import "components/appBanner";                                                            
+
+                       
+@import "layout/header";  
+@import "layout/grid"; 
+@import "layout/flex"; 
+@import "layout/footer";  
+@import "layout/body";  
+
+ 
+
+ 
+@import "pages/home";
+ 

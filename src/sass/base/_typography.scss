@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', serif;
+    // font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-primary;
+  }
+
+.heading-primary {
+    color: $color-primary;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 3.5rem 0; 
+    font-size: 5.6rem;
+    font-family: 'Lora', serif;           
+    
+    &--main {
+        display: inline-block;
+        font-size: 5rem;
+        font-weight: 400;
+        animation-name: moveInLeft;
+        line-height: 5.4rem;
+        animation-duration: 1s;
+        margin-bottom: 2.5rem;
+        animation-timing-function: ease-out;
+        width: 90%;
+        @include respond-phone {
+            font-size: 28px;
+        }
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: normal;
+        // letter-spacing: 1.75rem;
+        line-height: 3.2rem;
+        animation: moveInRight 1s ease-out;
+    }
+}
+
+.heading-secondary {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $color-black;
+    padding-bottom: 3.3rem;
+    max-width: 70rem;
+    line-height: 4rem;
+    display: inline-block;
+    
+    
+    @include respond-phone {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.heading-tertiary {
+    font-size: 4.8rem;
+    font-weight: 600;
+    font-family: 'Lora', serif;
+    color: $color-yellow;
+    // @include respond-phone {
+    //     font-size: 12px;
+    //     line-height: 16px;
+    // }
+    &--sub {
+        font-size: 2.2rem;
+        font-style: italic;
+        margin-bottom: 4.6rem;
+    }
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.yellow-text {
+    color: $color-yellow;
+    font-size: 2.2rem;
+}

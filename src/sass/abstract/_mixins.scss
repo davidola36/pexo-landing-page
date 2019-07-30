@@ -1,0 +1,22 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin respond-phone {
+    @media (max-width: 740px) {@content};
+}
+
+@mixin respond-tablet {
+    @media (max-width: 1200px) {@content};
+}

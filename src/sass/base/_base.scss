@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; 
+  @include respond-phone {
+    font-size: 32.5%;
+  }
+} //this defines what 1rem is
+
+body {
+  box-sizing: border-box; 
+}
+
+.cont {
+  width: 85%;
+  margin: 0 auto;
+  @include respond-phone {
+    width: 95%;
+  }
+
+  @include respond-tablet {
+    width: 95%;
+  }
+  
+}

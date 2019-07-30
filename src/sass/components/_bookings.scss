@@ -1,0 +1,27 @@
+.bookings-imgCont {
+    height: 178px;
+    &--img {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+.bookings-text {
+    font-size: 22px;
+    background: $color-grey;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.bookings-cont {
+    max-width: 280px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .5s ease;
+
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black,.25);
+    }
+}

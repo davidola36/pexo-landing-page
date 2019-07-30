@@ -1,0 +1,33 @@
+.app-banner {
+    margin-top: 11.8rem;
+    height: 425px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(#FFB400,.5) 0%, #FFB400 50%, #FFB503 100%);
+    &--content {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        @include absoluteCenter;
+
+        > div:not(:last-child) {
+            width: 55%;
+        }
+    }
+
+    &--text {
+        font-size: 3.6rem;
+        text-align: left;
+        color: $color-white;
+        line-height: 43px;
+        margin-bottom: 24px;
+    }
+    
+    &-img--cont {
+        width: 30%;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+}

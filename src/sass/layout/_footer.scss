@@ -1,0 +1,54 @@
+.footer {
+    @include respond-phone {
+        text-align: center;
+    }
+    &-sub {
+        background: $color-primary-dark;
+        height: 57px;
+        text-align: center;
+        position: relative;
+
+        h4 {
+            @include absoluteCenter;
+            font-weight: normal;
+            color: $color-grey-dark
+        }
+    }
+
+    &-main {
+        padding: 3.5rem 0px;
+
+        &--connectBox {
+            display: inline-block;
+            text-align: left;
+            @include respond-phone {
+                text-align: center;
+            }
+        }
+
+        &--title{
+            font-size: 18px;
+            margin-bottom: 14px;
+            text-align: left;
+            @include respond-phone {
+                text-align: center;
+            }
+        }
+
+        &--text:not(:last-child) {
+            margin-bottom: 10px; 
+        }
+
+        &--text:hover {
+            color: $color-yellow;
+            cursor: pointer;
+        }
+
+        div > div > div:last-child {
+            text-align: right;
+            @include respond-phone {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+.project{
+    display: flex;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    background: transparent;
+    margin-bottom: 8rem;
+
+    &-contractors{
+
+        &-avatar {
+            border-radius: 50%;
+            width: 45px;
+            height: 100%;
+            object-fit: cover; 
+            @include respond-phone {
+               width: 30px;
+            }
+        }
+
+        &-cont {
+            height: 45px;
+            @include respond-phone {
+                height: 30px;
+            }
+        }
+    }
+
+    &-content {
+        &--cont {
+            padding: 3.3rem 1.5rem;
+            background-color: $color-secondary;
+            width: 64%;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+        }
+
+        &--info {
+            font-size: 1.4rem;
+            @include respond-phone {
+                font-size: 10px;
+                line-height: 16px;
+            }
+        }
+
+        &--icon {
+            width: 20px;
+            margin-right: 1rem;
+            filter: invert(55%) sepia(87%) saturate(1431%) hue-rotate(173deg) brightness(89%) contrast(91%);
+        }
+
+        &--text {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            @include respond-phone {
+                font-size: 10px;
+            }
+        }
+    }
+
+    &-image {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        &--cont {
+            width: 36%;
+            position: relative;
+            
+        }
+
+        &--status {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 14px;
+            color: $color-white;
+            padding: 5px 10px;
+            background: $color-primary;
+            border-radius: 5px 0;
+            @include respond-phone {
+                font-size: 12px;
+            }
+        }
+
+        &--progress {
+            position: absolute;
+            bottom: 20px;
+            width: 80%;
+            color: $color-black;
+            text-align: center;
+            font-size: 12px;
+            background-color: $color-white;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+            @include respond-phone {
+                font-size: 10px;
+            }
+
+        }
+
+        &--progressInner {
+            height: 100%;
+            display: block;
+            background-color: $color-primary;
+            padding: 5px 0;
+            border-radius: 5px;
+            width: 45%;
+            position: relative;
+            height: 28px;
+            z-index: 10;
+            width: 100%;
+        }
+
+        &--progressInnerSpan {
+            @include absoluteCenter;
+            z-index: 50;
+            width: 100%;
+        }
+
+    }
+
+    &-sorter {
+        margin-bottom: 5rem;
+
+        &--label {
+            width: 30%;
+            font-weight: bold;
+            @include respond-phone {
+                font-weight: normal;
+                display: flex;
+                align-items: center;
+            }
+
+        }
+
+        &--icon {
+            margin-left: 1rem;
+            @include respond-phone {
+                height: 1.4rem;
+                margin-left: 2px; 
+            }
+        }
+
+        &--cont {
+            width: 70%;
+            font-size: 2.4rem;
+            border-radius: 5px;
+            border: 1px solid $color-primary;
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            
+
+            span {
+                width: 25%;
+                display: inline-block;
+                text-align: center;
+                font-weight: 600;
+                @include respond-phone {
+                    font-weight: normal;
+                }
+            }
+
+            span:not(:first-child){
+                background-color: $color-primary;
+                color: $color-white;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                height: 100%;
+                font-weight: bold;
+                @include respond-phone {
+                    font-weight: normal;
+                    height: 55px;
+                    align-items: center
+                }
+            }
+        }
+    }
+}
